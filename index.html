@@ -5,6 +5,61 @@
   </head>
 
   <body >
-      Hello
+    <h1 id="title">Jess Albrecht</h1>
+
+    <div id ="menu" class="flex-container">
+      <div style="width: 200px">About Me</div>  
+      <div style="width: 200px";>Github</div>
+      <div style="width: 200px">Contact</div>
+    </div>
+      <div class="postContainer">
+        <img src="ocean.JPG" alt="Ocean!" class="postContainer" onclick="imgOnClick(this.src, this.alt)" ></div>        
+    <img src="kirkland.jpg" onclick="imgOnClick(this.src, this.alt)" >
+    <img src="ewa.jpg"onclick="imgOnClick(this.src, this.alt)" >
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
   </body>
+
+
+  <script>
+    /*Makes the title and menu show and hide on scroll*/
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("menu").style.bottom = "0";
+          document.getElementById("title").style.top = "0";
+        } else {
+          document.getElementById("menu").style.bottom = "-100px";
+          document.getElementById("title").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    function imgOnClick(imgSrc, imgCaptionText){
+      modal.style.display = "block";
+      modalImg.src = imgSrc;
+      captionText.innerHTML = imgCaptionText;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+  </script>
 </html>

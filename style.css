@@ -1,0 +1,119 @@
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; /* used to align the flex items*/
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.postContainer{
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/* The Modal (background) https://www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  align-content: center; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  padding-top: 10vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  display: block;
+  align-content: center; /* Location of the box */
+  max-height: 80vh; /* scale height to width */
+  max-width: 80vw;
+  height: auto;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+from {transform: scale(0.1)} 
+to {transform: scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  --main-bg-color: rgba(53, 54, 58);
+  background-color: var(--main-bg-color);
+}
+#title {
+  color: rgba(238,238,238,1);
+  text-align: center;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top of the screen */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+img{
+  max-width:100%;
+  max-height: 50vh; /*1vh = 1% of browser screen height*/
+  height: auto;
+  display: block; /*display property specifies the type of rendering box an element uses, 
+                    block starts on a new line, and takes up the whole width*/
+  /*centers the image*/
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+#menu{
+  position: fixed; /* Make it stick/fixed */
+  bottom: 0; /* Stay on top */ 
+  width: 100%; /* Full width */
+  transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
+}
