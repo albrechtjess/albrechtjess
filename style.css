@@ -93,6 +93,7 @@ body {
 }
 #title {
   color: rgba(238,238,238,1);
+  background-color: rgba(88, 85, 85, 0.637);
   text-align: center;
   position: fixed; /* Make it stick/fixed */
   top: 0; /* Stay on top of the screen */
@@ -116,4 +117,16 @@ img{
   bottom: 0; /* Stay on top */ 
   width: 100%; /* Full width */
   transition: bottom 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+p{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+#btnLink{
+  
 }
