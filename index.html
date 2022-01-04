@@ -24,9 +24,10 @@
           <br>
           Since graduation I've primarily worked in technology support roles in Virtual Reality and Education but I am interested in 
           stepping out of that and into software engineering or management. 
-          
-          </p>        
+          </p>       
+
           <img src="ocean.JPG" alt="The pacific coastline is one of my favorite places to visit!" class="postContainer" onclick="imgOnClick(this.src, this.alt)" >
+          <p></p>          
           <img src="ewa.jpg"alt="The hills of Liberty Lake just outside of Spokane, WA" onclick="imgOnClick(this.src, this.alt)" >
       </div>
     <!-- The Modal -->
@@ -42,7 +43,7 @@
     /*Makes the title and menu show and hide on scroll*/
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
+      var currentScrollPos = window.pageYOffset; 
         if (prevScrollpos > currentScrollPos) {
           document.getElementById("menu").style.bottom = "0";
           document.getElementById("title").style.top = "0";
