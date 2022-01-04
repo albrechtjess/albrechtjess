@@ -90,6 +90,7 @@ to {transform: scale(1)}
 body {
   --main-bg-color: rgba(53, 54, 58);
   background-color: var(--main-bg-color);
+  color: azure;
 }
 #title {
   color: rgba(238,238,238,1);
